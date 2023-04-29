@@ -8,7 +8,7 @@ class ScientistsController < ApplicationController
     end
 
     def show
-        render json: @scientist, serializer: ScientistPlanetSerializer
+        render json: one_scientist, serializer: ScientistPlanetSerializer
     end
 
     def create
